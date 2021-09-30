@@ -1,0 +1,33 @@
+.sidebarRow {
+  display: flex;
+  padding: 20px 10px;
+}
+.sidebarRow:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+.text {
+  margin-left: 15px;
+  flex: 1;
+}
+.icon {
+  color: gray;
+}
+
+.sidebarRow:hover > .icon {
+  color: red;
+}
+.sidebarRow:hover > .text {
+  font-size: large;
+}
+
+.active {
+  background-color: rgb(216, 210, 210);
+}
+
+.active > .icon {
+  color: red;
+}
+.active > .text {
+  font-weight: bold;
+}

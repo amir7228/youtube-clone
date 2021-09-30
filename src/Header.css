@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: white;
+}
+.header__left {
+  align-items: center;
+  display: flex;
+}
+.header__left > .MuiSvgIcon-root {
+  cursor: pointer;
+}
+
+.header__logo {
+  height: 15px;
+  object-fit: contain;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.header__input {
+  align-items: center;
+  display: flex;
+  width: 42%;
+  border: 1px solid lightgray;
+}
+
+.header__input > input {
+  flex: 1;
+  border: none;
+  outline-width: 0;
+}
+
+.header__inputbutton {
+  border-left: 1px solid lightgray;
+  background-color: #fafafa;
+  color: gray;
+}
+
+.header__icons {
+  display: flex;
+  align-items: center;
+}
+
+.header__icons > .MuiSvgIcon-root {
+  margin-right: 8px;
+  cursor: pointer;
+}

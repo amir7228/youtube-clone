@@ -1,0 +1,22 @@
+[debug] [2021-09-30T08:52:23.724Z] ----------------------------------------------------------------------
+[debug] [2021-09-30T08:52:23.728Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\amira\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js projects:list
+[debug] [2021-09-30T08:52:23.728Z] CLI Version:   9.19.0
+[debug] [2021-09-30T08:52:23.728Z] Platform:      win32
+[debug] [2021-09-30T08:52:23.729Z] Node Version:  v14.18.0
+[debug] [2021-09-30T08:52:23.729Z] Time:          Thu Sep 30 2021 12:22:23 GMT+0330 (Iran Standard Time)
+[debug] [2021-09-30T08:52:23.730Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-09-30T08:52:23.733Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-09-30T08:52:23.771Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-09-30T08:52:23.771Z] > authorizing via signed-in user (amir.ahanfeshar@gmail.com)
+[debug] [2021-09-30T08:52:23.777Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2021-09-30T08:52:24.313Z] Failed to make request: invalid json response body at https://firebase.googleapis.com/v1beta1/projects?pageSize=1000 reason: Unexpected token < in JSON at position 0
+[debug] [2021-09-30T08:52:24.930Z] FirebaseError: Failed to make request: invalid json response body at https://firebase.googleapis.com/v1beta1/projects?pageSize=1000 reason: Unexpected token < in JSON at position 0
+    at Client.request (C:\Users\amira\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:109:19)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async getProjectPage (C:\Users\amira\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:233:17)
+    at async getFirebaseProjectPage (C:\Users\amira\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:250:23)
+    at async Object.listFirebaseProjects (C:\Users\amira\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:281:29)
+    at async Command.actionFn (C:\Users\amira\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\projects-list.js:50:20)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
